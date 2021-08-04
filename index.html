@@ -74,11 +74,11 @@
                         <h3>{{title}}</h3>
                         <p>iva: {{iva}}%</p>
                         <p class="inputLabel">Preço:</p>
-                        <input type="text" v-on:click="numPadTypef('preco')" v-model="preco">
+                        <input type="text" v-on:click="numPadTypef('preco')" v-model="preco" onfocus="blur()">
                         <p class="inputLabel">Desconto:</p>
-                        <input type="text" v-on:click="numPadTypef('desconto')" v-model="desconto">
+                        <input type="text" v-on:click="numPadTypef('desconto')" v-model="desconto" onfocus="blur()">
                         <p class="inputLabel">Quantidade:</p>
-                        <input type="text" v-on:click="numPadTypef('Quantity')" v-model="Quantity">
+                        <input type="text" v-on:click="numPadTypef('Quantity')" v-model="Quantity" onfocus="blur()">
 
                         <div class="emLinhaEsq">
                             <div>
@@ -123,7 +123,7 @@
                                 <button v-on:click="modal2=false; Quantity=1">Cancelar</button>
                             </div>
                             <div>
-                                <button v-on:click="">Salvar altração</button>
+                                <button v-on:click="">Salvar alteração</button>
                             </div>
 
                         </div>
