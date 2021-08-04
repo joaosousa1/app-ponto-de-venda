@@ -274,6 +274,59 @@ select:focus {
     color: red;
 }
 
+@media only screen and (max-width: 1200px) {
+    .mainGrid{
+        display: block;
+    }
+    .avisoDesktop{
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .grid > div {
+        min-height: 100px;
+    }
+
+    .talaoGridTop {
+        position: unset;
+    }
+
+    .mainItem4 {
+        background: #acacac;
+        overflow: unset;
+    }
+
+    .mainItem3 {
+        display: flex;
+    }
+
+    .emLinhaEsq {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttonTile {
+        height: 100px;
+        margin-bottom: 5px;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+    }
+
+    button {
+        height: 100px;
+    }
+}
+
 /* estilo para imprimir  */
 
 @page {
